@@ -36,7 +36,7 @@ const Contact = () => {
             if (res.ok && json?.success) {
                 setFormMessage("✅ Message sent!");
                 setIsAnimating(true);
-                setTimeout(() => setIsAnimating(false), 3000);
+                setTimeout(() => setIsAnimating(false), 4000);
             } else {
                 setFormMessage(`❌ ${json?.error || "Failed to send message."}`);
             }
@@ -62,7 +62,7 @@ const Contact = () => {
                         animationData={animationData}
                         loop={false}
                         autoplay
-                        style={{ width: 900, height: 700 }}
+                        style={{ width: 950, height: 750 }}
                     />
                 </div>
             )}
