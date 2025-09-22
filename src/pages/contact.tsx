@@ -31,12 +31,14 @@ const Contact = () => {
                 body: JSON.stringify(formData),
             });
 
-            if (res.ok) {
-                console.log('Form submitted successfully');
-                window.location.href = "/thank-you";
+            const json = await res.json();
+
+            if (res.ok && json?.success) {
+                setFormMessage("✅ Message sent!");
+                setIsAnimating(true);
+                setTimeout(() => setIsAnimating(false), 3000);
             } else {
-                console.error('Server responded with error:', res.status);
-                setFormMessage("❌ Failed to send message.");
+                setFormMessage(`❌ ${json?.error || "Failed to send message."}`);
             }
         } catch (error) {
             console.error('Network error during form submission:', error);
@@ -54,6 +56,16 @@ const Contact = () => {
             <ScrollReveal delay={0.2}>
                 <p className="text-center text-[15px] md:text-xl lg:text-xl md:px-20 lg:px-25 mb-5">Kindly fill in the form below, your response will be forwarded directly to my email, I'd love to hear from you.</p>
             </ScrollReveal>
+            {isAnimating && (
+                <div className="absolute inset-0 justify-center items-center pointer-events-none">
+                    <Lottie
+                        animationData={animationData}
+                        loop={false}
+                        autoplay
+                        style={{ width: 900, height: 700 }}
+                    />
+                </div>
+            )}
             <ScrollReveal delay={0.3}>
                 <form
                     onSubmit={handleSubmit}
@@ -62,7 +74,7 @@ const Contact = () => {
                         <div className="flex flex-col md:flex-row lg:flex-row gap-[3px] md:gap-3 lg:gap-3">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start">NAME</label>
                             <input
-                                className="border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-200 w-full"
+                                className="border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full"
                                 placeholder="Phantom Dev"
                                 type="text"
                                 name="name"
@@ -74,7 +86,7 @@ const Contact = () => {
                         <div className="flex flex-col md:flex-row lg:flex-row gap-[3px] md:gap-3 lg:gap-3">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start uppercase">Phone</label>
                             <input
-                                className="border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-200 w-full"
+                                className="border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full"
                                 placeholder="+1-234-5678-910"
                                 type="tel"
                                 name="phone"
@@ -86,7 +98,7 @@ const Contact = () => {
                         <div className="flex flex-col md:flex-row lg:flex-row gap-[3px] md:gap-3 lg:gap-3">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start uppercase">Email</label>
                             <input
-                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-200 w-full"
+                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full"
                                 placeholder="phantomdev@gmail.com"
                                 type="email"
                                 name="email"
@@ -97,7 +109,7 @@ const Contact = () => {
                         <div className="flex flex-col gap-[3px] md:gap-2 lg:gap-2 mt-5 md:mt-8 lg:mt-8">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start uppercase">Message</label>
                             <textarea
-                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-200 w-full h-[150px] md:h-[200px] lg:h-[200px]"
+                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full h-[150px] md:h-[200px] lg:h-[200px]"
                                 placeholder="type a message here..."
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
@@ -108,16 +120,6 @@ const Contact = () => {
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.8}>
-                        {isAnimating && (
-                            <div className="absolute -bottom-5 right-0 z-0 pointer-events-none">
-                                <Lottie
-                                    animationData={animationData}
-                                    loop={false}
-                                    autoplay
-                                    style={{ width: 900, height: 400 }}
-                                />
-                            </div>
-                        )}
 
                         <div className="flex flex-col item-center justify-center mt-4">
                             <button
