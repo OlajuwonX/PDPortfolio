@@ -49,7 +49,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="flex flex-col gap-5 mb-8 py-8 px-5 md:py-10 md:px-12 lg:px-10 lg:py-13">
+        <div className="flex flex-col gap-5 mb-8 py-8 px-5 md:py-10 md:px-12 lg:px-10 lg:py-13 text-gray-800 dark:text-gray-200">
             <ScrollReveal delay={0.1}>
                 <h1 className="uppercase font-semibold md:font-bold lg:font-bold text-center text-2xl md:text-3xl lg:text-3xl -tracking-tight">Contact Me</h1>
             </ScrollReveal>
@@ -57,7 +57,7 @@ const Contact = () => {
                 <p className="text-center text-[15px] md:text-xl lg:text-xl md:px-20 lg:px-25 mb-5">Kindly fill in the form below, your response will be forwarded directly to my email, I'd love to hear from you.</p>
             </ScrollReveal>
             {isAnimating && (
-                <div className="absolute inset-0 justify-center items-center pointer-events-none">
+                <div className="absolute inset-0 justify-center item-center pointer-events-none">
                     <Lottie
                         animationData={animationData}
                         loop={false}

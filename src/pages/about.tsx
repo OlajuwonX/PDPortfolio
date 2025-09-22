@@ -3,7 +3,7 @@ import ScrollReveal from "../components/ui/scrollreveal";
 
 const About = () => {
     return (
-        <div className="py-10 px-4 lg:px-15 lg:py-15">
+        <div className="py-10 px-4 lg:px-15 lg:py-15 text-gray-800 dark:text-gray-200">
             <ScrollReveal delay={0.1}>
                 <p className="text-2xl md:text-3xl lg:text-3xl font-bold pb-5 md:pb-7 lg:pb-7">From Blueprints to Codeprints</p>
             </ScrollReveal>
