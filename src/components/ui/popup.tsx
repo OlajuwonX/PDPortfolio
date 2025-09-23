@@ -18,7 +18,7 @@ export default function Popup() {
                             target="_blank"
                             rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 0 }}
-                            animate={{ opacity: 1, y: -70 }}
+                            animate={{ opacity: 1, y: -60 }}
                             exit={{ opacity: 0, y: 0 }}
                             transition={{ duration: 0.3 }}
                             className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-green-500  shadow-lg"
@@ -32,7 +32,7 @@ export default function Popup() {
                             target="_blank"
                             rel="noopener noreferrer"
                             initial={{ opacity: 0, x: 0, y: 0 }}
-                            animate={{ opacity: 1, x: -50, y: -40 }}
+                            animate={{ opacity: 1, x: -50, y: -35 }}
                             exit={{ opacity: 0, x: 0, y: 0 }}
                             transition={{ duration: 0.3 }}
                             className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-blue-500 shadow-lg"
@@ -54,7 +54,7 @@ export default function Popup() {
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="flex items-center justify-center w-10 h-10 md:w-14 md:h-14 lg:w-14 lg:h-14 rounded-full bg-teal-600 text-white shadow-lg cursor-pointer"
+                className="flex items-center justify-center w-10 h-10 md:w-13 md:h-13 lg:w-13 lg:h-13 rounded-full bg-teal-600 text-white shadow-lg cursor-pointer"
             >
                 <Plus size={24} strokeWidth={2} />
             </motion.button>
