@@ -1,8 +1,8 @@
 import {useNavigate} from "react-router-dom";
-import {ThumbsUp} from "lucide-react";
 import {BsLinkedin} from "react-icons/bs";
 import {FaGithub, FaInstagram, FaTiktok, FaTwitter} from "react-icons/fa6";
 import ScrollReveal from "./ui/scrollreveal";
+import {FaDirections} from "react-icons/fa";
 
 const Footer = () => {
 
@@ -23,8 +23,8 @@ const Footer = () => {
                         className="px-8 py-2 flex flex-row gap-2 text-center item-center justify-center rounded-lg w-[180px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
                         onClick={() => navigate("/contact")}
                     >
-                        <p className="text-center">Connect</p>
-                        <span> <ThumbsUp className="size-6" /></span>
+                        <p className="text-center text-xl">Contact</p>
+                        <span> <FaDirections className="size-6" /> </span>
                     </button>
                 </div>
             </ScrollReveal>
@@ -35,7 +35,7 @@ const Footer = () => {
                     <p className="text-2xl md:text-3xl lg:text-4xl font-semibold">Let's Connect</p>
                 </ScrollReveal>
                 <ScrollReveal delay={0.5}>
-                <div className="flex flex-row text-center item-center justify-center w-full">
+                <div className="flex flex-row pl-8 md:pl-12 lg:pl-20 text-center item-center justify-center w-full">
                         <a
                             className="size-14 md:size-18 lg:size-24 transition-all hover:scale-105 hover:text-teal-500 cursor-pointer"
                             href="https://www.linkedin.com/in/olasimbo-olajuwon-b986b7230/"
@@ -80,11 +80,11 @@ const Footer = () => {
                 </ScrollReveal>
             </div>
         {/*    CopyRight*/}
-            <ScrollReveal delay={1}>
-                <hr className="border border-black dark:border-gray-200"/>
-            </ScrollReveal>
-            <ScrollReveal delay={1.1}>
-                <p className="text-[15px] md:text-xl lg:text-xl">Copyright © 2025 PhantomDev</p>
+            <ScrollReveal delay={0.6}>
+            <div className="flex flex-col gap-2 mt-[-30px] md:mt-[-30px] lg:mt-[-50px]">
+                    <hr className="border border-black dark:border-gray-200"/>
+                    <p className="pb-2 text-[15px] md:text-xl lg:text-xl">Copyright © 2025 PhantomDev</p>
+            </div>
             </ScrollReveal>
         </footer>
     )
