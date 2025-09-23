@@ -40,7 +40,7 @@ const Footer = () => {
                             className="transition-all hover:scale-105 hover:text-teal-500 cursor-pointer"
                             href="https://www.linkedin.com/in/olasimbo-olajuwon-b986b7230/"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <BsLinkedin className="size-5 md:size-7 lg:size-7" />
                         </a>
@@ -48,7 +48,7 @@ const Footer = () => {
                             className="transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                             href="https://x.com/PhantomXDev"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <FaTwitter className="size-5 md:size-7 lg:size-7"/>
                         </a>
@@ -56,7 +56,7 @@ const Footer = () => {
                             className="transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                             href="https://www.instagram.com/yung_in?igsh=cXNjZGFueGUzaDBk&utm_source=qr"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <FaInstagram className="size-5 md:size-7 lg:size-7"/>
                         </a>
@@ -64,7 +64,7 @@ const Footer = () => {
                             className=" transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                             href="https://www.tiktok.com/@olajuwonx15?_t=ZS-8zqvw3thoy8&_r=1"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <FaTiktok className="size-5 md:size-7 lg:size-7"/>
                         </a>
@@ -72,7 +72,7 @@ const Footer = () => {
                             className="transition-all hover:scale-110 hover:text-green-700 cursor-pointer"
                             href="https://github.com/OlajuwonX"
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                         >
                             <FaGithub className="size-5 md:size-7 lg:size-7"/>
                         </a>

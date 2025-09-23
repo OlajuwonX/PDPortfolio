@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import { NavData } from "../data/data";
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -9,12 +9,15 @@ import Socials from "./socials";
 const Mobile = () => {
     const [open, setOpen] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
 
     return (
         <nav className="flex flex-row sticky top-0 justify-between w-[100%] px-4 py-3 z-50 bg-white dark:bg-black">
             {/* Logo + Title */}
             <div className="flex items-center">
-                <img src="/pdlogo1.png" alt="NavLogo" className="h-10 w-11" />
+                <button onClick={()=> navigate("/")}>
+                    <img src="/pdlogo1.png" alt="NavLogo" className="h-10 w-11 cursor-pointer" />
+                </button>
             </div>
 
             {/* Hamburger / Close */}

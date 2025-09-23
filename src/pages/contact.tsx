@@ -49,7 +49,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="flex flex-col gap-5 mb-8 py-8 px-5 md:py-10 md:px-12 lg:px-10 lg:py-13 text-gray-800 dark:text-gray-200">
+        <div className="flex flex-col item-center justify-center gap-5 mb-8 py-8 px-5 md:py-10 md:px-12 lg:px-10 lg:py-13 text-gray-800 dark:text-gray-200">
             <ScrollReveal delay={0.1}>
                 <h1 className="uppercase font-semibold md:font-bold lg:font-bold text-center text-2xl md:text-3xl lg:text-3xl -tracking-tight">Contact Me</h1>
             </ScrollReveal>

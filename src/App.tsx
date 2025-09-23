@@ -10,7 +10,7 @@ import Popup from "./components/ui/popup";
 
 const App = () => {
     return (
-        <div className="scroll-smooth">
+        <div className="scroll-smooth text-gray-800 dark:text-gray-200">
             <Nav />
             <Routes>
                 <Route path="/" element={<Home />} />

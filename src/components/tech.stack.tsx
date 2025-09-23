@@ -26,7 +26,7 @@ const TechStack = () => {
     return (
         <div
             id="tech-stack"
-            className="py-8 bg-white dark:bg-black">
+            className="py-8">
             <ScrollVelocity
                 texts={[Languages.join(" • "), Frameworks.join(" • ")].flat()}
                 velocity={60}

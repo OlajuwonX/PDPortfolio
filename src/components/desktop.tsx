@@ -1,13 +1,16 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { NavData } from '../data/data';
 import ToggleTheme from "./ui/toggle.theme";
 
 const Desktop = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     return (
-        <nav className="flex flex-row items-center justify-between border-none w-full px-5 py-2 bg-white dark:bg-black text-black dark:text-white">
+        <nav className="flex flex-row items-center justify-between border-none w-full px-5 py-2 bg-white dark:bg-black ">
             <div className="flex flex-row">
-                <img src="/pdlogo1.png" alt="NavLogo" className="h-13 w-14"  />
+                <button onClick={()=> navigate("/")}>
+                    <img src="/pdlogo1.png" alt="NavLogo" className="h-13 w-14 cursor-pointer" />
+                </button>
             </div>
             <ul className="flex justify-center items-center list-none gap-8 uppercase mt-1 text-[17.5px]">
                 {NavData.map(({id, name, path}) => (

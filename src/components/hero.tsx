@@ -31,7 +31,7 @@ const Hero = () => {
                 />
             </div>
             <div className="flex flex-col py-30 px-5 md:px-8 lg:px-10">
-                <div className="flex flex-col gap-5 text-center text-black dark:text-white items-center justify-center w-full md:px-10 lg:px-20">
+                <div className="flex flex-col gap-5 text-center items-center justify-center w-full md:px-10 lg:px-20">
                     <GradientText
                         colors={["#0a5735", "#204db6", "#2b490a", "#22a3cb", "#40ffaa"]}
                         animationSpeed={5}

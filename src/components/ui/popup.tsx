@@ -13,7 +13,10 @@ export default function Popup() {
                 {open && (
                     <>
                         {/* WhatsApp (above main button) */}
-                        <motion.button
+                        <motion.a
+                            href="https://wa.me/2348123806786?text=Hello%2C%20I%20just%20saw%20your%20portfolio.%20I%20would%20love%20to"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             initial={{ opacity: 0, y: 0 }}
                             animate={{ opacity: 1, y: -70 }}
                             exit={{ opacity: 0, y: 0 }}
@@ -21,10 +24,13 @@ export default function Popup() {
                             className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-green-500  shadow-lg"
                         >
                             <BsWhatsapp size={20} />
-                        </motion.button>
+                        </motion.a>
 
                         {/* Phone (diagonal at 45°) */}
-                        <motion.button
+                        <motion.a
+                            href="tel:+2348123806786"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             initial={{ opacity: 0, x: 0, y: 0 }}
                             animate={{ opacity: 1, x: -50, y: -40 }}
                             exit={{ opacity: 0, x: 0, y: 0 }}
@@ -32,7 +38,7 @@ export default function Popup() {
                             className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-blue-500 shadow-lg"
                         >
                             <Phone size={20}  />
-                        </motion.button>
+                        </motion.a>
                     </>
                 )}
             </AnimatePresence>
