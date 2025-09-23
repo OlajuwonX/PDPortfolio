@@ -20,68 +20,68 @@ const Footer = () => {
             <ScrollReveal delay={0.3}>
                 <div className="flex flex-col items-center justify-center w-full mt-4">
                     <button
-                        className="px-8 py-2 flex flex-row gap-2 text-center item-center justify-center rounded-lg w-[180px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
+                        className="px-8 py-2 flex flex-row gap-2 text-center item-center justify-center rounded-lg w-[170px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
                         onClick={() => navigate("/contact")}
                     >
-                        <p className="text-center text-xl">Contact</p>
-                        <span> <FaDirections className="size-6" /> </span>
+                        <p className="text-center text-[16px]">Contact</p>
+                        <span> <FaDirections className="size-5" /> </span>
                     </button>
                 </div>
             </ScrollReveal>
 
             {/*Socials*/}
-            <div className="flex flex-col w-full text-center item-center justify-center gap-6 md:gap-8 lg:gap-8 mt-3 md:mt-5 lg:mt-5">
+            <div className="flex flex-col w-full text-center item-center justify-center gap-3 md:gap-5 lg:gap-5 mt-3 md:mt-5 lg:mt-5">
                 <ScrollReveal delay={0.4}>
                     <p className="text-2xl md:text-3xl lg:text-4xl font-semibold">Let's Connect</p>
                 </ScrollReveal>
                 <ScrollReveal delay={0.5}>
-                <div className="flex flex-row pl-8 md:pl-12 lg:pl-20 text-center item-center justify-center w-full">
+                <div className="flex flex-row gap-10 text-center item-center justify-center w-full ">
                         <a
-                            className="size-14 md:size-18 lg:size-24 transition-all hover:scale-105 hover:text-teal-500 cursor-pointer"
+                            className="transition-all hover:scale-105 hover:text-teal-500 cursor-pointer"
                             href="https://www.linkedin.com/in/olasimbo-olajuwon-b986b7230/"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <BsLinkedin />
+                            <BsLinkedin className="size-5 md:size-7 lg:size-7" />
                         </a>
                         <a
-                            className="size-14 md:size-18 lg:size-24 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                            className="transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                             href="https://x.com/PhantomXDev"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaTwitter />
+                            <FaTwitter className="size-5 md:size-7 lg:size-7"/>
                         </a>
                         <a
-                            className="size-14 md:size-18 lg:size-24 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                            className="transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                             href="https://www.instagram.com/yung_in?igsh=cXNjZGFueGUzaDBk&utm_source=qr"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaInstagram />
+                            <FaInstagram className="size-5 md:size-7 lg:size-7"/>
                         </a>
                         <a
-                            className="size-14 md:size-18 lg:size-24 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                            className=" transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                             href="https://www.tiktok.com/@olajuwonx15?_t=ZS-8zqvw3thoy8&_r=1"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaTiktok />
+                            <FaTiktok className="size-5 md:size-7 lg:size-7"/>
                         </a>
                         <a
-                            className="size-14 md:size-18 lg:size-24 transition-all hover:scale-110 hover:text-green-700 cursor-pointer"
+                            className="transition-all hover:scale-110 hover:text-green-700 cursor-pointer"
                             href="https://github.com/OlajuwonX"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            <FaGithub />
+                            <FaGithub className="size-5 md:size-7 lg:size-7"/>
                         </a>
                 </div>
                 </ScrollReveal>
             </div>
         {/*    CopyRight*/}
             <ScrollReveal delay={0.6}>
-            <div className="flex flex-col gap-2 mt-[-30px] md:mt-[-30px] lg:mt-[-50px]">
+            <div className="flex flex-col gap-2 mt-2">
                     <hr className="border border-black dark:border-gray-200"/>
                     <p className="pb-2 text-[15px] md:text-xl lg:text-xl">Copyright © 2025 PhantomDev</p>
             </div>

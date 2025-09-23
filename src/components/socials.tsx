@@ -3,48 +3,48 @@ import {FaGithub, FaInstagram, FaTiktok, FaTwitter} from "react-icons/fa6";
 
 const Socials = () => {
     return (
-        <div className="flex flex-col justify-start gap-5">
+        <div className="flex flex-col justify-start gap-7">
             <p className="text-xl font-semibold">Let's Connect</p>
-            <div className="flex flex-row items-center gap-3">
+            <div className="flex flex-row items-center gap-7">
                 <a
-                    className="size-10 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                    className=" transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                     href="https://www.linkedin.com/in/olasimbo-olajuwon-b986b7230/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <BsLinkedin />
+                    <BsLinkedin className="size-5"/>
                 </a>
                 <a
-                    className="size-10 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                    className=" transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                     href="https://x.com/PhantomXDev"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <FaTwitter />
+                    <FaTwitter className="size-5"/>
                 </a>
                 <a
-                    className="size-10 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                    className=" transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                     href="https://www.instagram.com/yung_in?igsh=cXNjZGFueGUzaDBk&utm_source=qr"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <FaInstagram />
+                    <FaInstagram className="size-5"/>
                 </a>
                 <a
-                    className="size-10 transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
+                    className=" transition-all hover:scale-105 hover:text-green-700 cursor-pointer"
                     href="https://www.tiktok.com/@olajuwonx15?_t=ZS-8zqvw3thoy8&_r=1"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <FaTiktok />
+                    <FaTiktok className="size-5"/>
                 </a>
                 <a
-                    className="size-10 transition-all hover:scale-110 hover:text-green-700 cursor-pointer"
+                    className="ransition-all hover:scale-110 hover:text-green-700 cursor-pointer"
                     href="https://github.com/OlajuwonX"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <FaGithub />
+                    <FaGithub className="size-5" />
                 </a>
             </div>
         </div>

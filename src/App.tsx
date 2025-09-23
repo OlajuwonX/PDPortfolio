@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import Footer from "./components/footer";
+import Popup from "./components/ui/popup";
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Popup />
             <Footer />
         </div>
     )
