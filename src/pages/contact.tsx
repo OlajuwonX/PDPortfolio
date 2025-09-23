@@ -129,7 +129,7 @@ const Contact = () => {
                                     setIsAnimating(true);
                                     setTimeout(() => setIsAnimating(false), 3000);
                                 }}
-                                className="px-8 py-2 rounded-lg text-[15px] md:text-xl lg:text-xl bg-teal-700 font-semibold hover:bg-teal-600 cursor-pointer transition-all"
+                                className="px-8 py-2 rounded-lg text-[15px] md:text-xl lg:text-xl text-gray-200 bg-teal-700 font-semibold hover:bg-teal-600 cursor-pointer transition-all"
                             >
                                 {isSubmitting ? "Sending..." : "Submit"}
                             </button>

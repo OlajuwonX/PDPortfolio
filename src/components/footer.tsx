@@ -20,7 +20,7 @@ const Footer = () => {
             <ScrollReveal delay={0.3}>
                 <div className="flex flex-col items-center justify-center w-full mt-4">
                     <button
-                        className="px-8 py-2 flex flex-row gap-2 text-center item-center justify-center rounded-lg w-[170px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
+                        className="px-8 py-2 flex flex-row gap-2 text-gray-200 text-center item-center justify-center rounded-lg w-[170px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
                         onClick={() => navigate("/contact")}
                     >
                         <p className="text-center text-[16px]">Contact</p>

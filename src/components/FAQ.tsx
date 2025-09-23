@@ -11,7 +11,7 @@ const Faq = () => {
             <Accordion
                 type="single"
                 collapsible
-                className="w-full md:w-[70%] lg:w-[70]"
+                className="w-full md:w-[70%] lg:w-[70%]"
             >
                 {ServicesData.map(({id, name, description, listHeader, list}) => (
                     <AccordionItem value={String(id)}>

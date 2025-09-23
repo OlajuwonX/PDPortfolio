@@ -47,14 +47,14 @@ export default function Popup() {
             <motion.button
                 onClick={() => setOpen(!open)}
                 animate={{
-                    scale: [1, 1.07, 1],
+                    scale: [1, 1.08, 1],
                 }}
                 transition={{
                     duration: 1.5,
                     repeat: Infinity,
                     ease: "easeInOut",
                 }}
-                className="flex items-center justify-center w-10 h-10 md:w-13 md:h-13 lg:w-13 lg:h-13 rounded-full bg-teal-600 text-white shadow-lg cursor-pointer"
+                className="flex items-center justify-center w-11 h-11 md:w-13 md:h-13 lg:w-13 lg:h-13 rounded-full bg-teal-600 text-gray-200 shadow-lg cursor-pointer"
             >
 
                 <Plus size={24} strokeWidth={2} />
