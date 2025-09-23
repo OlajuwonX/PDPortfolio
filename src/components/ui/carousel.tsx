@@ -72,7 +72,7 @@ export default function ProjectGrid({
 
     const getGridClasses = () => {
 
-        return `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 md:gap-10 lg:gap-10 item-center justify-center`;
+        return `grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 md:gap-10 lg:gap-10 justify-items-center`;
     };
 
     return (

@@ -74,7 +74,7 @@ const Contact = () => {
                         <div className="flex flex-col md:flex-row lg:flex-row gap-[3px] md:gap-3 lg:gap-3">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start">NAME</label>
                             <input
-                                className="border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full"
+                                className="border border-teal-600 rounded-sm px-2 py-[5px] outline-none focus:border-yellow-500 w-full"
                                 placeholder="Phantom Dev"
                                 type="text"
                                 name="name"
@@ -83,10 +83,10 @@ const Contact = () => {
                         </div>
                     </ScrollReveal>
                     <ScrollReveal delay={0.5}>
-                        <div className="flex flex-col md:flex-row lg:flex-row gap-[3px] md:gap-3 lg:gap-3">
+                        <div className="flex flex-col md:flex-row lg:flex-row gap-[px] md:gap-3 lg:gap-3">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start uppercase">Phone</label>
                             <input
-                                className="border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full"
+                                className="border border-teal-600 rounded-sm px-2 py-[5px] outline-none focus:border-yellow-500 w-full"
                                 placeholder="+1-234-5678-910"
                                 type="tel"
                                 name="phone"
@@ -98,7 +98,7 @@ const Contact = () => {
                         <div className="flex flex-col md:flex-row lg:flex-row gap-[3px] md:gap-3 lg:gap-3">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start uppercase">Email</label>
                             <input
-                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full"
+                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[5px] outline-none focus:border-yellow-500 w-full"
                                 placeholder="phantomdev@gmail.com"
                                 type="email"
                                 name="email"
@@ -109,7 +109,7 @@ const Contact = () => {
                         <div className="flex flex-col gap-[3px] md:gap-2 lg:gap-2 mt-5 md:mt-8 lg:mt-8">
                             <label className="px-2 text-[15px] md:text-xl lg:text-xl item-start uppercase">Message</label>
                             <textarea
-                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[3px] outline-none focus:border-yellow-500 w-full h-[150px] md:h-[200px] lg:h-[200px]"
+                                className="bg-inherit border border-teal-600 rounded-sm px-2 py-[5px] outline-none focus:border-yellow-500 w-full h-[150px] md:h-[200px] lg:h-[200px]"
                                 placeholder="type a message here..."
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
