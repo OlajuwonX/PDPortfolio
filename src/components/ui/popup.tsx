@@ -47,7 +47,7 @@ export default function Popup() {
             <motion.button
                 onClick={() => setOpen(!open)}
                 animate={{
-                    scale: [1, 1.04, 1],
+                    scale: [1, 1.07, 1],
                 }}
                 transition={{
                     duration: 1.5,
