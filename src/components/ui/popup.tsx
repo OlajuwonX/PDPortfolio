@@ -56,6 +56,7 @@ export default function Popup() {
                 }}
                 className="flex items-center justify-center w-10 h-10 md:w-13 md:h-13 lg:w-13 lg:h-13 rounded-full bg-teal-600 text-white shadow-lg cursor-pointer"
             >
+
                 <Plus size={24} strokeWidth={2} />
             </motion.button>
         </div>
