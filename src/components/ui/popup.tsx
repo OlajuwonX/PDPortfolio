@@ -21,7 +21,7 @@ export default function Popup() {
                             animate={{ opacity: 1, y: -60 }}
                             exit={{ opacity: 0, y: 0 }}
                             transition={{ duration: 0.3 }}
-                            className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-green-500  shadow-lg"
+                            className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full text-gray-200 bg-green-500  shadow-lg"
                         >
                             <BsWhatsapp size={20} />
                         </motion.a>
@@ -35,7 +35,7 @@ export default function Popup() {
                             animate={{ opacity: 1, x: -50, y: -35 }}
                             exit={{ opacity: 0, x: 0, y: 0 }}
                             transition={{ duration: 0.3 }}
-                            className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full bg-blue-500 shadow-lg"
+                            className="absolute flex items-center justify-center w-9 h-9 md:w-12 md:h-12 lg:w-12 lg:h-12 rounded-full text-gray-200 bg-blue-500 shadow-lg"
                         >
                             <Phone size={20}  />
                         </motion.a>
