@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import { NavData } from "../data/data";
 import { motion as Motion, AnimatePresence } from "framer-motion";
@@ -11,11 +11,34 @@ const Mobile = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
+    const menuRef = useRef<HTMLUListElement | null>(null);
+    const buttonRef = useRef<HTMLButtonElement | null>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (
+                open &&
+                menuRef.current &&
+                !menuRef.current.contains(e.target as Node) &&
+                buttonRef.current &&
+                !buttonRef.current.contains(e.target as Node)
+            ) {
+                setOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [open]);
+
     return (
         <nav className="flex flex-row sticky top-0 justify-between w-[100%] px-4 py-3 z-50 bg-white dark:bg-black">
             {/* Logo + Title */}
             <div className="flex items-center">
-                <button onClick={()=> navigate("/")}>
+                <button onClick={() => {
+                    navigate("/");
+                    setOpen(false);
+                }}>
                     <img src="/pdlogo1.png" alt="NavLogo" className="h-10 w-11 cursor-pointer" />
                 </button>
             </div>
@@ -24,6 +47,7 @@ const Mobile = () => {
             <div className="flex flex-row gap-2">
                 <ToggleTheme />
                 <button
+                    ref={buttonRef}
                     onClick={() => setOpen((prev) => !prev)}
                     className="p-2 rounded-md text-black hover:scale-110 dark:text-white hover:bg-green-50 dark:hover:bg-gray-800 transition cursor-pointer"
                 >
@@ -38,6 +62,7 @@ const Mobile = () => {
                 <AnimatePresence>
                     {open && (
                         <Motion.ul
+                            ref={menuRef}
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}

@@ -15,6 +15,20 @@ const About = () => {
                     </p>
                 </ScrollReveal>
             ))}
+            <ScrollReveal delay={0.3}>
+                <p className="text-[16px] md:text-[18px] tracking-[1px] pb-3 leading-5 md:leading-6 lg:leading-7 w-full md:w-[85%] lg:w-[75%]"
+                >
+                    My learning never stops, half of it lives in my head and the other half lives on GitHub. Take a peek into my repo to see what I’ve been building lately.
+                    <a
+                        href="https://github.com/olajuwonx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pl-3 underline italic text-blue-500">
+                        Code Playground
+                    </a>
+                </p>
+            </ScrollReveal>
+
         </div>
     )
 }

@@ -130,7 +130,7 @@ export const ProjectData = [
             " out.",
         link: "https://hire-lens-phi.vercel.app/",
         img: [
-            "/hl1.png", "/hl2.png", "/hl3.png",
+            "/hl1.webp", "/hl2.webp", "/hl3.webp",
         ]
     },
     {
@@ -143,7 +143,7 @@ export const ProjectData = [
             " inquiries",
         link: "https://www.orvynmedia.com/",
         img: [
-            "/orvyn1.png", "/orvyn2.png", "/orvyn3.png", "/orvyn4.png",
+            "/orvyn1.webp", "/orvyn2.webp", "/orvyn3.wwebp", "/orvyn4.webp",
         ]
     },
     {
@@ -154,7 +154,7 @@ export const ProjectData = [
             " summary in cart, Checkout seamlessly",
         link: "https://xquiseat.pages.dev/",
         img: [
-            "/xquis1.png", "/xquis2.png", "/xquis3.png", "/xquis4.png", "/xquis5.png", "/xquis6.png",
+            "/xquis1.webp", "/xquis2.webp", "/xquis3.webp", "/xquis4.webp", "/xquis5.webp", "/xquis6.webp",
         ]
     },
     {
@@ -165,7 +165,7 @@ export const ProjectData = [
             " profile image upload, online indicator auth...",
         link: "https://chatapp-84n6.onrender.com/",
         img: [
-            "/chat1.png", "/chat2.png", "/chat3.png", "/chat4.png", "/chat5.png",
+            "/chat1.webp", "/chat2.webp", "/chat3.webp", "/chat4.webp", "/chat5.webp",
         ]
     },
     {
@@ -176,7 +176,7 @@ export const ProjectData = [
             " product details, a cart page ...",
         link: "https://xpay-1ug.pages.dev/",
         img: [
-            "/xpay1.png", "/xpay2.png", "/xpay3.png", "/xpay4.png", "/xpay5.png",
+            "/xpay1.webp", "/xpay2.webp", "/xpay3.webp", "/xpay4.webp", "/xpay5.webp",
         ]
     },
 ]
