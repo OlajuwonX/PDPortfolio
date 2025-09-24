@@ -57,7 +57,7 @@ const Contact = () => {
                 <p className="text-center text-[15px] md:text-xl lg:text-xl md:px-20 lg:px-25 mb-5">Kindly fill in the form below, your response will be forwarded directly to my email, I'd love to hear from you.</p>
             </ScrollReveal>
             {isAnimating && (
-                <div className="absolute inset-0 justify-center items-center pointer-events-none">
+                <div className="absolute inset-0 flex justify-center items-center pointer-events-none overflow-hidden z-50">
                     <Lottie
                         animationData={animationData}
                         loop={false}
