@@ -9,7 +9,7 @@ const Footer = () => {
     const navigate = useNavigate();
 
     return (
-        <footer className="flex flex-col w-full text-center items-center justify-center gap-5 mt-8 pt-8 px-5 md:pt-10 md:px-12 lg:px-10 lg:pt-13 text-gray-800 dark:text-gray-200">
+        <footer className="flex flex-col w-full text-center justify-center gap-5 mt-8 pt-8 px-5 md:pt-10 md:px-12 lg:px-10 lg:pt-13 text-gray-800 dark:text-gray-200">
             <ScrollReveal delay={0.1}>
                 <p className="text-2xl md:text-3xl text-center flex-wrap lg:text-4xl font-semibold lg:font-bold md:px-30 lg:px-50">Ready to take your digital experience to the next level?</p>
             </ScrollReveal>
