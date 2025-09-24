@@ -9,7 +9,7 @@ const Footer = () => {
     const navigate = useNavigate();
 
     return (
-        <footer className="flex flex-col w-full text-center item-center justify-center gap-5 mt-8 pt-8 px-5 md:pt-10 md:px-12 lg:px-10 lg:pt-13 text-gray-800 dark:text-gray-200">
+        <footer className="flex flex-col w-full text-center items-center justify-center gap-5 mt-8 pt-8 px-5 md:pt-10 md:px-12 lg:px-10 lg:pt-13 text-gray-800 dark:text-gray-200">
             <ScrollReveal delay={0.1}>
                 <p className="text-2xl md:text-3xl text-center flex-wrap lg:text-4xl font-semibold lg:font-bold md:px-30 lg:px-50">Ready to take your digital experience to the next level?</p>
             </ScrollReveal>
@@ -20,7 +20,7 @@ const Footer = () => {
             <ScrollReveal delay={0.3}>
                 <div className="flex flex-col items-center justify-center w-full mt-4">
                     <button
-                        className="px-8 py-2 flex flex-row gap-2 text-gray-200 text-center item-center justify-center rounded-lg w-[170px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
+                        className="px-8 py-2 flex flex-row gap-2 text-gray-200 text-center items-center justify-center rounded-lg w-[170px] bg-teal-700 font-semibold hover:bg-teal-600 hover:scale-110 cursor-pointer transition-all"
                         onClick={() => navigate("/contact")}
                     >
                         <p className="text-center text-[16px]">Contact</p>
@@ -30,12 +30,12 @@ const Footer = () => {
             </ScrollReveal>
 
             {/*Socials*/}
-            <div className="flex flex-col w-full text-center item-center justify-center gap-3 md:gap-5 lg:gap-5 mt-3 md:mt-5 lg:mt-5">
+            <div className="flex flex-col w-full text-center items-center justify-center gap-3 md:gap-5 lg:gap-5 mt-3 md:mt-5 lg:mt-5">
                 <ScrollReveal delay={0.4}>
                     <p className="text-2xl md:text-3xl lg:text-4xl font-semibold">Let's Connect</p>
                 </ScrollReveal>
                 <ScrollReveal delay={0.5}>
-                <div className="flex flex-row gap-10 text-center item-center justify-center w-full ">
+                <div className="flex flex-row gap-10 text-center items-center justify-center w-full ">
                         <a
                             className="transition-all hover:scale-105 hover:text-teal-500 cursor-pointer"
                             href="https://www.linkedin.com/in/olasimbo-olajuwon-b986b7230/"
