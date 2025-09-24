@@ -143,7 +143,7 @@ export const ProjectData = [
             " inquiries",
         link: "https://www.orvynmedia.com/",
         img: [
-            "/orvyn1.webp", "/orvyn2.webp", "/orvyn3.wwebp", "/orvyn4.webp",
+            "/orvyn1.webp", "/orvyn2.webp", "/orvyn3.webp", "/orvyn4.webp",
         ]
     },
     {
