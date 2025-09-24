@@ -39,7 +39,7 @@ const Mobile = () => {
                     navigate("/");
                     setOpen(false);
                 }}>
-                    <img src="/pdlogo1.png" loading="lazy" alt="NavLogo" className="h-10 w-11 cursor-pointer" />
+                    <img src="/pdlogo2.webp" loading="lazy" alt="NavLogo" className="h-10 w-11 cursor-pointer" />
                 </button>
             </div>
 
