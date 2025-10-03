@@ -38,7 +38,7 @@ const Hero = () => {
                         showBorder={false}
                         className="custom-class"
                     >
-                        Full Stack Developer
+                        Front-End Developer
                     </GradientText>
                     <TextType
                         text={[
